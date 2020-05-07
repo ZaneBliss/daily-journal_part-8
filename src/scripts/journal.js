@@ -54,7 +54,7 @@ radioButton.forEach(button => {
                 }
                 return currMood
         })))
-        
+        console.log(moodEntries);
     })
 });
 
