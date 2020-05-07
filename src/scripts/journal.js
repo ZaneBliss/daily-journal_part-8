@@ -6,6 +6,8 @@ fieldset.writeDom();
 
 API.getJournalEntries().then(entries.renderJournalEntries);
 
+const entriesHolder = document.querySelector(".entryLog");
+
 document.querySelector("#submitBtn").addEventListener("click", function () {
     debugger
     let date = document.querySelector("#journalDate").value;
@@ -42,21 +44,18 @@ conceptsInput.addEventListener("keyup", function () {
 });
 
 let radioButton = document.querySelectorAll('input[type="radio"')
-radioButton.forEach(button => {
-    button.addEventListener("click", () => {
+radioButton.forEach(button => button.addEventListener("click", () => {
+        entriesHolder.innerHTML = ""
         let mood = event.target.value
-        let moodEntries = []
-        API.getJournalEntries().then(parsedEntries => 
-            moodEntries.push(parsedEntries.filter(entry => {
-                let currMood = false;
-                if (entry.mood == mood) {
-                    currMood = true;
-                }
-                return currMood
-        })))
-        console.log(moodEntries);
-    })
-});
+        API.getJournalEntries()
+        .then(entry => {
+            let filtered = entry.filter(entry => entry.mood == mood)
+            entries.renderJournalEntries(filtered)
+        })}));
+
+entriesHolder.addEventListener('click', ()=> {
+
+})
 
 const createEntry = (date, concepts, content, mood) => ({
     date: date,
