@@ -1,0 +1,53 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "date": "4/14/20",
+      "concepts": "Figma and wireframing, navigation, communication",
+      "content": "We learned a lot about design.",
+      "mood": "🙂"
+    },
+    {
+      "id": 2,
+      "date": "4/15/20",
+      "concepts": "Team collaboration and working on Sprint 1.",
+      "content": "We work together great as a team!",
+      "mood": "🙂"
+    },
+    {
+      "id": 3,
+      "date": "4/16/20",
+      "concepts": "Presenting, introduction to JS",
+      "content": "There was a lot of information, but I am feeling comfortable with the exercises.",
+      "mood": "🙂"
+    },
+    {
+      "id": 4,
+      "date": "4/17/20",
+      "concepts": "Datatypes, objects, DOM",
+      "content": "This was a little challenging, but I am excited about manipulating HTML elements using the DOM.",
+      "mood": "🙂"
+    },
+    {
+      "date": "2020-05-05",
+      "concepts": "Factory functions, POST",
+      "content": "Created and implemented factory functions\nUpdated database using POST method",
+      "mood": "🙂",
+      "id": 5
+    },
+    {
+      "date": "2001-01-01",
+      "concepts": "asdf",
+      "content": "asdf",
+      "mood": "🙁",
+      "id": 6
+    },
+    {
+      "date": "2001-01-01",
+      "concepts": "asdf",
+      "content": "asdf",
+      "mood": "😐",
+      "id": 7
+    }
+  ]
+}
